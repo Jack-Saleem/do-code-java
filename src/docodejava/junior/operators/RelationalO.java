@@ -13,5 +13,7 @@ public class RelationalO {
 //        Nesting is not Supported by Relational Operators.
 //        System.out.println(10 > 20 > 30);
 
+//        Not applicable to the Object or String Types also.
+//        System.out.println("Sadik" < "Sadik48");
     }
 }
