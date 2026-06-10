@@ -1,4 +1,4 @@
-CASE STATMENTS TYPES:
+IMPORT STATMENTS TYPES:
 There are two types of import statments
 1. Explicit Import Statment
 	ex:
