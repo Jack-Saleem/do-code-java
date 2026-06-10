@@ -1,0 +1,41 @@
+PACKAGES:
+It is an encapsulation mechanism to grouping of related classes and interfaces into a single unit nothing but a package.
+ex:
+All the classes and the interfaces required for the datebase operations are grouped into one package called 
+java.sql package
+
+All the classes and interfaceswhich are usefull for the file input operations are groped as the 
+java.io package
+
+ADVANTAGES OF PACKAGES:
+1. To resolve the naming conflicts [ex; having date in both sql and util package but both are from different packages]
+2. Maintainablity and readability will be increased.
+3. Security will be increased.
+
+There is an Universal naming convention i.e, reverse internet domain name.
+ex:
+com.icicibank.loan.housing.acount
+
+If the location is not there in the system the statment will crate the location and save the file over there.
+If we won't mention any location to the file then, the .class file will be saved in the current  working directory[cwd].
+if we want to store the file file in aparticular location then we need to give the directory through the cmd as,
+
+javac -d . Test.java
+where,
+-d : destination of the generated .class file 
+. : current working directory
+
+If there is no such directory then it will raise a compile time error saying: no directory found.
+
+CONCLUSIONS:
+1. Atmost one package statment is allowed per source file
+2. Package must be the first non comented statment in the source file.
+
+
+SOURCE FILE STRUCTURE:
+
+															PACKAGE STATMENTS
+																	|
+															IMPORT STATMENTS
+																	|
+												CLASSES / INTERFACES / ENUM DECLARATIONS
