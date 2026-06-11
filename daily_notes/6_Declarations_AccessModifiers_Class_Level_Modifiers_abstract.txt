@@ -1,0 +1,92 @@
+ABSTRACT MODIFIER:
+This modifier is applicable for the classes & methods but not for variables.
+
+ABSTRACT METHOD:
+Even we don't know abt the implementation we can declare a method with abstract modifier i.e., 
+	For abstract method method only declaration is possible.
+Abstract method declaration should end with a semicolon(;).
+ex:
+	public abstract void main m1();
+	
+Child class is responsible for the implementation of the abstract method of the parent class
+If any one of the method is abstract then the clas also needs to be abstract.
+ex:_______________________________________________________________________________________
+	abstract class Vehicles
+	{
+	abstract public int main getNoofWheels();
+	}
+	
+	public class Bus extends Vehicles	|	public class Auto extends Vehicles
+	{									|	{									
+	public void getNoofWheels()			|	public void getNoofWheels()			
+	{									|	{									
+	return 7;							|	return 3;							
+	}									|	}
+	}									|	}
+	
+	
+When a method is declared as abstract in the parent class then it should be implemented in the child class, it is mandatory.
+Abstract method never talks abt the implementation if any modifier tried to combine with abstract for implementation then it created an illeagle combination.
+Possible Illeagle combinations are,
+______________________________________________________________________________
+(abstract)
+	|
+	|
+	|- - (final)
+	|
+	|
+	|- - (native)
+	|
+	|
+	|- - (synchronized)
+	|
+	|
+	|- - (private)
+	|
+	|
+	|- - (strict fp)
+	
+ex:
+abstract final void main();
+CE: Illeagle combination.
+
+
+ABSTRACT CLASS:
+The class which is having the partial implementation we cannot create an object for that classes for such classes we need to define them with abstract modifier.
+	Instantiation is not possible for abstract classes.
+ex:
+abstract class Test {
+}
+Test T = new Test();
+CE: Test abstract cannot be istantiated.
+
+
+ABSTRACT CLASS VS ABSTRACT METHOD:
+1. If a class contains atleast one abstract method the we need to declare the class with abstract otherwise we'll get a compile time error.
+REASON: When the method is abstract then implementation of the method is not done yet, creation of an object is not possible.
+	to restrict the object instantiation we need to declare the class with abstract modifier.
+2. Even the class won't contain any abstract method we can still declare the class with abstract, if we don't want the class to get instatntiated.
+	NOTE: Abstract class can have ZERO no. of abstract methods also.
+
+If we are extending the abstract class then the abstract methods in parent methods needs to get implemented in the child class, 
+	Otherwise we need to declare it as abstract child class, then the next child needs to implement all the abstract methods.
+
+FINAL VS ABSTRACT:
+1. Abstract methods are needed to be overide in the child class to provide implementation
+		whereas final method restricts the user from overiding, creates illeagle combination.
+2. For final classes we cannot create child classes,
+	whereas when it comes to abstract classes it is mandatory to create the child class for the implementation of the methods.
+3. Abstract class can contain final methods but
+	Final class cannot have abstract methods inside it, due to the creation of the child class is not possible.
+ex:______________________________________________________________________________
+	abstract class Test				|	final class Test
+	{								|	{
+	public final void main m1()		|	abstract public void main m1();
+	{								|	}
+	}								|
+	}								|
+	
+	NOTE:
+		highly recomended to use abstract, it promotes the OOP's festures like
+								INHERITANCE & POLYMORPHISM.
+								

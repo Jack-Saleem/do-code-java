@@ -1,0 +1,46 @@
+CLASS LEVEL MODIFIERS:
+When we create classes on our own we need to specify the JVM that,
+ The classes can be accessable from anywhere or not,
+ Creation of the child class possible or not,
+ Creationof Object possible or not.
+ We can do this by applying the appropriate access modifiers.
+ 
+ The only applicable modifiers to the Top level of the class are,
+ public
+ final
+ abstract
+ <default>
+ strict fp
+	|
+	|		The applicable modifiers for the Inner level of the class are
+	|_ _ _ (+)  private
+				protected
+				static
+
+public, private, protected are considered as Access Specifiers except these other as Modifiers, But this rule is applicable to old languages like C++.
+In java all are considered as Modifiers.
+We know that if a class is declared with public kew word it can be accessed from anywhere, Without this pulic when we try to access a class in another class, it won't accept.
+When a class is declared as default then the class can be accessed only with in the package outside that package we can't access that class.
+
+FINAL MODIFIER:
+It is applicable for classes, methods & variables
+
+FINAL in METHODS:
+*. Whatever the methods parent they are also applicable to the child class by default.
+*. If the child is not satisfied with the parent method method implementation then the child can redefine the method on it's own way,
+	This process is called as "METHOD OVERIDING".
+*. When the parent class method is declared as final then it's not possible for the child class to overide the parent implemented method, because it's final.
+
+FINAL in CLASS:
+When we declare a class with final then we cant extend the class so, inheritance is not possible.
+If the class is final then the methods inside that class will also be final by default but the variables inside that methods may not be as final.
+
+ADVANTAGE:
+Improves Security.
+
+DISADVANTAGES:
+INHERITANCE cannot be achived due to final class declaration.
+POLYMORPHISM cannot be achived due to final method implementation.
+Declaring with final key word results in loosing the key OOP's concepts.
+
+It is only recomended to use final where it's necessary.
