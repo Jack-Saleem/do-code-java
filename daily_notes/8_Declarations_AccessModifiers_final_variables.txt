@@ -1,0 +1,83 @@
+FINAL VARIABLES:
+This can be applied on the variable types
+Instance
+Static &
+Local variables
+
+1. FINAL INSTANCE VARIABLES:
+	Instance Variables:
+		1)If the value of the variables varies from objest to object then it's called as Instance Variables.
+		2)it is declared inside of a class and outside of methods.
+		3)JVM provides default values for the variable no need to provide explicit initialization.
+
+Final Instance Variable:
+When we declare the instance variable with final modifier then JVM won't provide any default values, explicit initialization needed.
+
+Rules to intialize Final Instance Variable.
+1.AT THE TIME OF DECLARATION:
+		class Test 
+		{
+		final int x = 10;
+		}
+	
+2.INSIDE THE INSIDE BLOCK:
+		class Test 
+		{
+		final int x {
+		x = 10;
+		}
+		}
+		
+3.INSIDE CONSTRUCTOR:
+		class Test 
+		{
+		final int x;
+		Test()
+		{
+		x = 10;
+		}
+		}
+		
+	Except this we can't initialize this final instance variables anywhere.
+NOTE: The initialization needs to be done before the execuition of the constructor.
+
+
+2. FINAL STATIC VARIABLE:
+	Static variables:
+		1)when we declare a variable with static then the value will be remain same and shared by all the objects.
+		2)It is created at the class level.
+		3)JVM will provide default values to this no explicit initialization is required.
+		
+Final Static Variable:
+When staic variable is declared with final modifier then ecplicit initialization should be required and JVM won't provide any defalult values.
+
+Rules to intialize Final Static Variable.
+1. AT THE TIME OD DECLARATION:
+		class Test
+		{
+		static final int x = 10;
+		}
+		
+2. INSIDE THE STATIC BLOCK:
+		class Test 
+		{
+		final static int x;
+		static
+		{
+		x = 10;
+		}
+		}
+	
+The initialization needs to be finishes before the class loading.
+
+3.FINAL LOCAL VARIABLES:
+	Local Variables:
+		1)To meet the temporary needs we use this Local Variables
+		2)Declared inside the block or method or constructor
+		3)No default values are provided from the JVM
+		4)By efault the local variable is fixed as final.
+		
+Final Local Variables:
+1. No default initialization is there need to provide values explicitly.
+2. If we're not using them then there's no need to provide any initialization.
+3. No other modifier is applicable to the Local Variable except this final.

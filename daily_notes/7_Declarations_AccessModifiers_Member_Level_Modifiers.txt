@@ -1,0 +1,23 @@
+METHOD OR VARIABLE LEVEL MODIFIER:
+1. PUBLIC MEMBER:
+	If a member is declared with public member then it can be accessible from anywhere only if the class is also declared as public 
+	i.e., before checking the visibility of the method we need to check the visibility of the class first.
+	
+2. DEFAULT MEMBER:
+	When we declare a member with default then it can be accessible only within that particular package only hence,
+	we can say that default access is also known as package level access.
+	
+3. PRIVATE MEMBER:
+	We can access this member only inside of the particular class inside which it was declared.
+	
+4. PROTECTED MEMBER:
+	If we declare a member with protected then it can accessible inside that paricular package 
+	and outside of the package inside the child package with only the refference of the chid.
+    -----------------------------------------------------------------------
+   | we can say :  <default> + kids(in child class with child refference)  |
+    -----------------------------------------------------------------------
+	
+NOTE:
+	PRIVATE  is the most restricted member among DEFAULT, PUBLC, PROTECTED
+										&
+	PUBLIC is the most flexible member.
