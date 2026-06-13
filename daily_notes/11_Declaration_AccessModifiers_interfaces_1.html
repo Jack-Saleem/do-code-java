@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTERFACES</title>
+</head>
+<body>
+    <h1>Interfaces Vid - 1</h1>
+    <h2>Introduction:</h2>
+<h4>Definition:</h4>
+<p>Any Service Requirment Specification (or)<br>Any contract between client and service provider 
+(or) <br>  A pure abstract class is nothing but an INTERFACE.</p>
+<h4>Declaration & Implementation:</h4>
+<P>For every method that we declare in interface needs to be implemented in the class otherwise we should declare that class as abstractso, that the next child class will implement those methods.<br>
+Every interface method is by default public and abstract, dosen't matter whether we declare them with them or not. so, whenever we're implementing that interface method then it's mandatory to declare that method as public or else we'll get compile time error.
+</P>
+<h4>Extends VS Implements:</h4>
+<p>
+1. A class can extend only one class at a time, but an interface can extend any no. of interfaces simultaneously.<br><br>Example:   <br>
+<code>interface A<br>{<br>}<br>interface B<br>{<br>}<br>
+interface C extends A, B<br>{<br>}
+</code>
+<br><br>
+2. A class can implement any no. of interfaces.<br>
+A class can extend and can implement any no. of interfaces.<br><br>
+Example<br>
+<code>
+    class A extends B Implements C,D,E <br> {<br>}
+</code>
+</p>
+</body>
+</html>

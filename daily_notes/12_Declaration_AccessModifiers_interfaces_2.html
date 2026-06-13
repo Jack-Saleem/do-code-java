@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTERFACES</title>
+</head>
+<body>
+    <h1>Interfaces Vid - 2</h1>
+    <h2> Interface Methods</h2>
+    <p>Every method inside of the Interface is by default public & abstract.<br>
+    <b>REASON:</b> It's public to provide the accessablity to the classes fro implementation.<br>
+    The implementation class is responsible for the implementation of that method.
+    <br>
+    The following method declarations are allowed inside the interface.<br>
+    <code><BR><b>ALLOWED</b><br>
+        void m1();<br>
+        public void m1();<br>
+        abstract void m1();<br>
+        public abstract void m1();<br>
+    </code>
+    <br>
+    As the method is by default on public and abstract, we can't declare the method with any orther access modifiers, like <br>
+    private<br>protected<br>static<br>final<br>synchronized<br>strict fp<br>native.<br>
+    </p>
+    <h2>Interface Variables</h2>
+    <p>
+        An interface can contain Variables<br>
+        Every Interface variabl is public, static & static by default no matter we declare them or not.
+        <b>REASON:</b><BR>
+            <b>public:</b> To make available to every implementation class.<br>
+            <b>ststic:</b> WIthout object also this implementation class has to access this variable.<br>
+            <b>final:</b> A single variable is getting shared by all the objects, <br>if any of the implementing class changes the variable then the change will be applicable on the next classes also.<br>
+            <br>Access modifiers like private, protected, transient & volatile are not applicable to this.
+            <br>
+            For interface variables initialization is must and should during the time of declaration itself otherwise CE will rises.<br>
+            Modification is not allowed due to Final Key Word.
+    </p>
+    <h2>Interface Naming Conflicts</h2>
+    <p>If two interfaces contains same method name & return type then in the implementation class we just need to implement only once</p>
+    <p>If two interfaces contains same method name but different argument type then we must provide implementation for both the methods, which will overloads the methods</p>
+    <p>If two interfaces contains same method name but different return types then it's not possible to implement such classes unless the return types are co-varient</p>
+    <p>Interface variables also have this problem but this ambiguity issue can be overcome by calling object with the interface name.</p>
+</body>
+</html>
