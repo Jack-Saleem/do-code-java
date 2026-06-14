@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        body {
+            background-color:cornsilk;
+        }
+        
+        table, th, td {
+  border:1px solid black;
+}
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTERFACES</title>
+</head>
+<body>
+    <h1>Interfaces Vid - 4</h1>
+    <p><b>Differences between Interface and Abstract Classes.</b></p>
+    <table style="width: 100%;">
+        <tr>
+            <th width = "50%">Interface</th>
+            <th width = "50%">Abstract Class</th>
+        </tr>
+        <tr>
+            <td>1. If we don't know anything abt the implementation and we just have the required specifications, then we should go for INTERFACES</td>
+            <td>1. If we are talking abt the implementation but not completly then we should go for Abstract Classes</td>
+        </tr>
+        <tr>
+            <td>2. Inside Interface every method is by default public and abstract whether we declare them or not so, Interface is comsidered to be as 100% pure abstract class</td>
+            <td>2. Every method inside the abstract class need not to be as public and abstract.</td>
+        </tr>
+        <tr>
+            <td>3.As every method in interface is always public & abstract we can't declare them with with<br> <b>private, protected, final, static, native, synchronized, strict fp</b> </td>
+            <td>3. We can declare a method with those access modifiers, there's no restrictions in abstract class. </td>
+        </tr>
+        <tr>
+            <td>4. Variables in Interface are always set on <b>public, static, final</b> no matter we declare or not.</td>
+            <td>4. Here variable are not set by default like that, there's no such restrictions.</td>
+        </tr>
+        <tr>
+            <td>5. Declaring variables with access modifiers like <b>private, protected, transient, volatile</b> is not allowed, the variable always fixed with <b>public, static, final.</b></td>
+            <td>5. Here we can declare the variable with any of those access modifier according to our requirment.</td>
+        </tr>
+        <tr>
+            <td>6. For interface variables initialization should be performed during the time of initialization, otherwise we'll get (C.E).</td>
+            <td>6. It's not mandatory to initialize the variables during the declaration.</td>
+        </tr>
+        <tr>
+            <td>7. Inside interface we can't declare <b>static</b> or <b>instance</b> blocks.</td>
+            <td>7. possible to declare <b>static</b> and <b>instance</b> blocks.</td>
+        </tr>
+        <tr>
+            <td>8. It's not possible to declare a <b>Constructor</b> inside an interface.</td>
+            <td>8. It is possible to declare a <b>Constructor</b> inside a abstract class.</td>
+        </tr>
+    </table><br>
+<br><br>
+To understand better Refer Video <a href="https://www.youtube.com/watch?v=VUQGdiKSYKI&list=PLd3UqWTnYXOmx_J1774ukG_rvrpyWczm0&index=43">Click_Here</a>
+    <p><iframe width="560" height="315" src="https://www.youtube.com/embed/VUQGdiKSYKI?si=BedHYNu_wekM6fXg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+</body>
+</html>
