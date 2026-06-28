@@ -1,0 +1,7 @@
+| Modifier  | Same Class | Same Package | Different Package Subclass | Different Package Non-Subclass |
+| --------- | ---------- | ------------ | -------------------------- | ------------------------------ |
+| public    | ✔          | ✔            | ✔                          | ✔                              |
+| protected | ✔          | ✔            | ✔                          | ❌                              |
+| default   | ✔          | ✔            | ❌                          | ❌                              |
+| private   | ✔          | ❌            | ❌                          | ❌                              |
+

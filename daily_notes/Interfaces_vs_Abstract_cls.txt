@@ -1,0 +1,18 @@
+Note: 
+We cannot implement an Interface without a class.
+We cannot implement a class.
+We cannot extend more than one class at a time.
+We can extend any number of interfaces.
+We can extend a class and then we can implement any number of interfaces.
+An interface can extend another interface
+				but
+An interface cannot implement an interface.
+
+Difference Between extends and implements.
+
+| extends                       | implements                        |
+| ----------------------------- | --------------------------------- |
+| Used for inheritance          | Used for interface implementation |
+| Class extends class           | Class implements interface        |
+| Interface extends interface   | Interface cannot implement        |
+| Single inheritance only       | Multiple interfaces allowed       |

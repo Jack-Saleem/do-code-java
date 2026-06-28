@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oops</title>
+</head>
+<style>
+    body {
+        background-color: lightcoral;
+    }
+</style>
+<body>
+    <div>
+        <h1 style="text-align: center;">Encapsulation <sub>(Data Members + Methods)</sub></h1>
+        <br>
+        <b>Definition:</b><br>
+        THe process of binding the data & the corresponding methods into a single unit is nothing but <b>Encapsulation</b>.<br>
+        If a component follows both the Data Hiding and the Abstraction mechanisms then it is said to be the encapsulated component.
+        <h3 style="text-align: center;">Encapsulation = Data Hiding + Abstraction</h3><br>
+        <b>Example: </b><br>
+        <code>
+            public class Account<br>
+            {<br>
+                public double balance;<br>
+                publuc double getBalance()<br>
+                {<br>
+                    // validation<br>
+                    return balance; <br>
+                }<br>
+<pre>
+public double setBalance(double balance)
+{
+//validation
+this.balance = balance;
+    }
+</pre>
+            }
+        </code> <br><br>
+        <b>Advantages:</b>
+<pre style="font-family: 'Times New Roman', Times, serif">
+1. Security is mainly one of the main advantage.
+2. Enhancement becomes easy.
+3. Improves the maintainablity of the application.
+        The main advantagge of this is security but it increases the execuition time and and also increases the length of the code.
+
+<h2 style="text-align: center;">Tightly Encapsulated Class</h2>
+A class is said to be a tightly ena=capsulated class if every data member inside it is declared as private whether getter and setter methods are declared or not & class is declared as public or not,
+These things are not required to check.
+
+<b>Example:</b>
+<code>
+    public class Account 
+    {
+        private double balance;
+        public double getBalance()
+        {
+            return balance;
+        }
+    }
+</code>
+<b>Note:</b> If the parent class is not tightly encapsulated then no corresponding child class will be tightly encapsulated.
+</pre>
+    </div>
+</body>
+</html>
